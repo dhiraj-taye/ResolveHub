@@ -58,5 +58,5 @@ This web application allows users to raise complaints, and administrators can vi
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/complaint-management-system.git
+git clone https://github.com/dhiraj-taye/ResolveHub.git
 cd complaint-management-system

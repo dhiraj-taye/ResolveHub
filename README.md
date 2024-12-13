@@ -47,7 +47,7 @@ This web application allows users to raise complaints, and administrators can vi
 ## Demo Links
 
 - **Frontend Demo:** [Live Demo](https://resolve-hub-frontend.vercel.app/)
-- **Admin Demo:** [Live Demo](https://resolve-hub-admin.vercel.app/)
+- **Admin Demo:** [Live Demo](https://resolve-hub-admin.vercel.app/)(email: dhirajtaye01@gmail.com password: dhiraj415)
 - **Backend Demo:** [Live API](https://resolve-hub-backend.vercel.app/)
 
 

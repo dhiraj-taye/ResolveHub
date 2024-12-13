@@ -51,16 +51,72 @@ This web application allows users to raise complaints, and administrators can vi
 - **Backend Demo:** [Live API](https://resolve-hub-backend.vercel.app/)
 
 
+# Complaint Management System
 
-# Complaint Management System: How to Use the Application
-1. **User Interface (Complaint Submission)**
-   As a user, you will interact with the application through the frontend interface, where you can submit complaints. Follow these steps:
-   1.Navigate to the Complaint Submission Page:
-       - Go to the homepage of the app, where you'll find a link or button to submit complaints.
-       - You'll be presented with a form that includes the following fields:
-         - Complaint Title (text input) – Enter a brief title for your complaint.
-         - Description (textarea) – Provide a detailed description of your complaint.
-         - Category (dropdown) – Select the category of your complaint from a predefined list 
-           (e.g., "Product", "Service", "Support").
-         - Priority (radio buttons) – Choose the priority level for your complaint: "Low", 
-           "Medium", or "High
+## How to Use the Application
+
+### 1. User Interface (Complaint Submission)
+
+As a user, you need to register first to submit complaints. Follow these steps:
+
+#### Step 1: User Registration
+- Navigate to the **Registration Page**.
+- Fill in the registration form with the following details:
+  - **Email** – A valid email address.
+  - **Password** – A secure password (minimum length, e.g., 8 characters).
+  - **Confirm Password** – Re-enter the password to confirm.
+- After filling in the form, click the **Register** button to create your account.
+- Upon successful registration, you'll be logged in automatically and redirected to the complaint submission page.
+
+#### Step 2: Login (if not registered)
+- If you've already registered but logged out, go to the **Login page**.
+- Enter your **Email** and **Password**, and click **Login** to proceed.
+
+#### Step 3: Submit a Complaint
+Once logged in, you will have access to the complaint submission form:
+- **Complaint Title** – Enter a brief title for your complaint.
+- **Description** – Provide a detailed description of your complaint.
+- **Category** – Choose from a predefined list (e.g., "Product", "Service", "Support").
+- **Priority** – Select "Low", "Medium", or "High".
+- After filling out the form, click the **Submit** button to create a complaint.
+- Upon successful submission, you'll see a confirmation message.
+- An email notification will be sent to the admin about the new complaint.
+
+### 2. Admin Interface (Complaint Management)
+
+As an admin, you can view and manage complaints. Follow these steps:
+
+#### Step 1: Admin Login
+- Navigate to the **Login page** and enter your admin credentials to log in.
+
+#### Step 2: View Complaints
+- Once logged in, you will be directed to the **Complaints Dashboard**, where you can view all complaints.
+- The complaints will be displayed in a table with:
+  - **Complaint Title**
+  - **Category**
+  - **Priority**
+  - **Date Submitted**
+  - **Status** (Pending, In Progress, Resolved)
+- Use the **Search** and **Filter** options to search for complaints by status or priority.
+
+#### Step 3: Update Complaint Status
+- **View Complaint Details**: Click on any complaint to see the full details, including the description and current status.
+- **Change Status**: As an admin, you can update the status of complaints (e.g., from "Pending" to "Resolved").
+- After updating the status, an email notification will be sent to confirm the status change.
+
+#### Step 4: Delete Complaints
+- **Delete Complaint**: Admins can delete a complaint by selecting the **Delete** option next to the complaint entry.
+
+### 3. Backend API (with User Authentication)
+
+The backend exposes several API endpoints that allow users to register, log in, and admins to manage complaints:
+
+#### User Registration (POST /auth/register)
+- **Route**: `POST /api/auth/register`
+- **Request Body**:
+  ```json
+  {
+    "email": "user@example.com",
+    "password": "password123"
+  }
+

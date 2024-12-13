@@ -52,6 +52,6 @@ This web application allows users to raise complaints, and administrators can vi
 
 
 
-#Complaint Management System: How to Use the Application
-1.** User Interface (Complaint Submission)**
--As a user, you will interact with the application through the frontend interface, where you can submit complaints. Follow these steps:
+# Complaint Management System: How to Use the Application
+1. **User Interface (Complaint Submission)**
+   - As a user, you will interact with the application through the frontend interface, where you can submit complaints. Follow these steps:

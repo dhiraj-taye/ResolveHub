@@ -51,12 +51,7 @@ This web application allows users to raise complaints, and administrators can vi
 - **Backend Demo:** [Live API](https://resolve-hub-backend.vercel.app/)
 
 
-## Setup Instructions
 
-### 1. Clone the Repository
-
-Clone the repository to your local machine:
-
-```bash
-git clone https://github.com/dhiraj-taye/ResolveHub.git
-cd complaint-management-system
+#Complaint Management System: How to Use the Application
+1.** User Interface (Complaint Submission)**
+-As a user, you will interact with the application through the frontend interface, where you can submit complaints. Follow these steps:

@@ -106,6 +106,32 @@ As an admin, you can view and manage complaints. Follow these steps:
 
 #### Step 4: Delete Complaints
 - **Delete Complaint**: Admins can delete a complaint by selecting the **Delete** option next to the complaint entry.
+- 
+
+## Email Functionality
+
+The system sends email notifications in the following scenarios:
+
+### New Complaint Submission (User)
+When a user submits a new complaint, an email is sent to the admin notifying them about the new complaint. The email includes details such as the complaint title, description, category, and priority.
+
+### Complaint Status Update (Admin)
+When an admin updates the status of a complaint (e.g., marking it as "Resolved"), an email notification is sent to the admin confirming the change. The email includes the complaint title, the updated status, and the date it was updated.
+
+---
+
+## How to Set Up Email Notifications (Using Brevo SMTP)
+
+### 1. Sign Up for Brevo
+Create an account on [Brevo](https://www.brevo.com/). Once signed up, you will have access to your API key and SMTP settings.
+
+### 2. Generate API Key
+From the Brevo dashboard, generate an API key for SMTP integration. This key will be used for authentication when sending emails.
+
+### 3. Configure Brevo SMTP in `.env`
+In your `.env` file, add the following variables to configure Brevo's SMTP service:
+
+
 
 
 

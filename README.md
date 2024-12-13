@@ -55,7 +55,7 @@ This web application allows users to raise complaints, and administrators can vi
 # Complaint Management System: How to Use the Application
 1. **User Interface (Complaint Submission)**
    As a user, you will interact with the application through the frontend interface, where you can submit complaints. Follow these steps:
-     -  1.Navigate to the Complaint Submission Page:
+   1.Navigate to the Complaint Submission Page:
        - Go to the homepage of the app, where you'll find a link or button to submit complaints.
        - You'll be presented with a form that includes the following fields:
          - Complaint Title (text input) – Enter a brief title for your complaint.

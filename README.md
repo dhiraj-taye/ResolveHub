@@ -120,27 +120,6 @@ When an admin updates the status of a complaint (e.g., marking it as "Resolved")
 
 ---
 
-## How to Set Up Email Notifications (Using Brevo SMTP)
-
-### 1. Sign Up for Brevo
-Create an account on [Brevo](https://www.brevo.com/). Once signed up, you will have access to your API key and SMTP settings.
-
-### 2. Generate API Key
-From the Brevo dashboard, generate an API key for SMTP integration. This key will be used for authentication when sending emails.
-
-### 3. Configure Brevo SMTP in `.env`
-In your `.env` file, add the following variables to configure Brevo's SMTP service:
-
-EMAIL_SERVICE=smtp EMAIL_HOST=smtp-relay.brevo.com EMAIL_PORT=587 EMAIL_USER=your-brevo-email-address EMAIL_PASS=your-brevo-api-key
-
-
-These settings allow the application to connect to Brevo’s SMTP server and send emails.
-
-### 4. Sending Emails
-When a complaint is submitted or its status is updated, the backend will use Brevo’s SMTP server to send the relevant email notifications.
-
----
-
 ## MongoDB Setup Instructions
 
 To store and manage complaint data, this application uses MongoDB. Here’s how to set up your MongoDB database:
@@ -155,12 +134,8 @@ Once logged in, create a new cluster. Choose a cloud provider, region, and any o
 After the cluster is created, MongoDB Atlas will provide a connection string that you can use to connect your backend to the MongoDB database.
 
 ### 4. Configure MongoDB URI in `.env`
-In the `.env` file, add the MongoDB URI. Replace `your-cluster-url` with the connection string provided by MongoDB Atlas:
+In the `.env` file, add the MongoDB URI provided by MongoDB Atlas:
 
-MONGO_URI=mongodb+srv://your-cluster-url
-
-### 5. Connecting to MongoDB
-The backend will automatically use the connection string to connect to MongoDB whenever the server starts. This will enable the system to store and retrieve complaints from the database.
 
 
 

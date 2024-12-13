@@ -34,7 +34,7 @@ This web application allows users to raise complaints, and administrators can vi
      - `DELETE /complaints/:id`: Admins delete complaints.
 
 4. **Email Notification Functionality**:
-   - Integrated email notifications using Nodemailer or SendGrid:
+   - Integrated email notifications using Nodemailer:
      - **New Complaint Submission:** Admin is notified when a new complaint is submitted.
      - **Status Update:** Admin receives an email when a complaint's status is updated.
 

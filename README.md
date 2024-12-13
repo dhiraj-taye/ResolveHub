@@ -107,16 +107,5 @@ As an admin, you can view and manage complaints. Follow these steps:
 #### Step 4: Delete Complaints
 - **Delete Complaint**: Admins can delete a complaint by selecting the **Delete** option next to the complaint entry.
 
-### 3. Backend API (with User Authentication)
 
-The backend exposes several API endpoints that allow users to register, log in, and admins to manage complaints:
-
-#### User Registration (POST /auth/register)
-- **Route**: `POST /api/auth/register`
-- **Request Body**:
-  ```json
-  {
-    "email": "user@example.com",
-    "password": "password123"
-  }
 

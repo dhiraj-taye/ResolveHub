@@ -131,6 +131,8 @@ From the Brevo dashboard, generate an API key for SMTP integration. This key wil
 ### 3. Configure Brevo SMTP in `.env`
 In your `.env` file, add the following variables to configure Brevo's SMTP service:
 
+EMAIL_SERVICE=smtp EMAIL_HOST=smtp-relay.brevo.com EMAIL_PORT=587 EMAIL_USER=your-brevo-email-address EMAIL_PASS=your-brevo-api-key
+
 
 
 
